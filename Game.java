@@ -19,6 +19,5 @@ class Game {
             misses += letter;
         }
         return isHit;
-
     }
 }
