@@ -3,7 +3,11 @@ class Game {
     private String answer;
     private String hits;
     private String misses;
- 
+    
+    public String getAnswer() {
+        return answer;
+    }
+    
     public Game(String answer) {
         this.answer = answer.toLowerCase();
         hits = "";
@@ -59,9 +63,5 @@ class Game {
 
     public boolean isWon() {
         return getCurrentProgress().indexOf('-') == -1;
-    }
-
-    public String getAnswer() {
-        return answer;
     }
 }
